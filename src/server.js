@@ -24,7 +24,7 @@ const onRequest = (request, response) => {
       htmlHandler.getPage(request, response, 'Client3');
       break;
     case '/bird.mp4':
-      mediaHandler.getMedia(request, response, makeMediaObj('../client/bird.mp4', 'video.mp4'));
+      mediaHandler.getMedia(request, response, makeMediaObj('../client/bird.mp4', 'video/mp4'));
       break;
     case '/bling.mp3': // MIME Type Reference: https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types
       mediaHandler.getMedia(request, response, makeMediaObj('../client/bling.mp3', 'audio/mpeg'));
